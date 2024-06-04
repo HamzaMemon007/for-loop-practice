@@ -1,39 +1,87 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
-
-body{
+body {
+    font-family: sans-serif;
     padding: 0;
     margin: 0;
-
 }
-header nav{
+
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+}
+
+nav a:hover {
+    color:  rgb(255, 252, 69);
+}
+
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    border-bottom: 2px solid rgb(255, 252, 69);
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+header {
+    color: #fff;
     display: flex;
     justify-content: end;
     align-items: center;
-    background: rgb(54, 54, 54);
-    color: aliceblue;
-
+    /* padding: 0; */
+    /* margin: 0; */
+    flex-wrap: wrap;
+    background-color: rgb(15, 15, 15);
+    padding: 1em;
+    
 }
-.navigation a{
-    text-decoration: none;
-    color: aliceblue;
-    margin: 0.7em;
-    font-family: 'Ubuntu', sans-serif;
+
+/* .brand-name {
+    justify-content: left;
+    color: #ffffff;
+    padding: 0 0 0 10px;
+    margin: 0;
+    font-size: 22px;
+    font-family: "Monoton", sans-serif;
     font-weight: 400;
-    padding: 6px;
-    border-radius: 20px;
-    transition: all , 0.3s;
-    
-    
-}
-.navigation a:hover{
-    
-    
-}
-.active{
-    background-color: rgb(187, 187, 187);
-    color: black !important;
-    transform: scale(1.1);
-    
+    font-style: normal;
+    font-stretch: expanded;
+    p img{
+        width: 70px;
+        margin-bottom: -20px;
+        margin-top: -13px;
+        color: yellow;
+        background-color: yellow;
+    }
+} */
 
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 410px) {
+    header {
+        justify-content: center;
+
+        nav a{
+            font-size: 0.8em;
+            padding: 6px 10px; 
+        }
+    }
 }

@@ -1,8 +1,14 @@
+
+body{
+    background-color: rgb(15, 15, 15);
+}
+
 main{
     display:flex;
     justify-content: center;
     align-items: center;
     margin: 1em;
+    /* background-color: black; */
 
 }
 
@@ -12,8 +18,27 @@ main{
     align-items: center;
     flex-direction: column;
     width: 500px;
-    border: 1px solid black;
+    border: 5px solid rgb(255, 252, 69);
+    border-radius: 10%;
     height: 500px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 2px;
+    color: rgb(255, 252, 69);
+
+
+}
+.container .buttons a{
+    text-decoration: none;
+    /* margin: 5px; */
+    padding: 20px;
+    color: antiquewhite;
+    border-style: double;
+    border-radius: 10px;
+    border-color: rgb(255, 252, 69);
+    font-size:large;
+    font-weight: 700;
+    gap: 1em;
+    
+
+
 }
