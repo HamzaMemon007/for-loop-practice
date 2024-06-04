@@ -28,6 +28,7 @@ main{
 
 }
 .container .buttons a{
+    /* position: absolute; */
     text-decoration: none;
     /* margin: 5px; */
     padding: 20px;
@@ -37,8 +38,19 @@ main{
     border-color: rgb(255, 252, 69);
     font-size:large;
     font-weight: 700;
-    gap: 1em;
-    
+    transition: all, 0.7s;
+    transform: scale(1);
 
 
+
+}
+
+.container .buttons a:hover{
+    transform: scale(1.08) ;
+    background-color:  rgb(255, 252, 69);
+    color: black;
+}
+.buttons {
+    display: flex;
+    gap: 2em;
 }
