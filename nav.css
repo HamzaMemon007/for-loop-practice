@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
+body{
+    padding: 0;
+    margin: 0;
+
+}
+header nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background: rgb(54, 54, 54);
+    color: aliceblue;
+
+}
+.navigation a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 0.7em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    padding: 6px;
+    border-radius: 20px;
+    transition: all , 0.3s;
+    
+    
+}
+.navigation a:hover{
+    
+    
+}
+.active{
+    background-color: rgb(187, 187, 187);
+    color: black !important;
+    transform: scale(1.1);
+    
+
+}
